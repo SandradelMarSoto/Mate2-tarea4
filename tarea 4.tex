@@ -18,7 +18,9 @@
 
     \begin{document}
         \title{Tarea/Examen 4 - Aplicaciones}
-        \author{Careaga Carrillo Juan Manuel \\ Quiróz Castañeda Edgar \\ Soto Corderi Sandra del Mar}
+        \author{Careaga Carrillo Juan Manuel
+        \\ Quiróz Castañeda Edgar
+        \\ Soto Corderi Sandra del Mar}
         \date{Miércoles 1 de junio de 2018}
         \maketitle
 
@@ -70,6 +72,44 @@
                 es cuando mucho $\frac{2}{3}$.
 
                 \color{azul}
+                Del hecho $p+q+r=1$ tenemos que $p=1-q-r$, entonces la ecuación de
+                Hardy-Weinberg queda
+                \begin{eqnarray*}
+                    P(p,q,r) & = & 2pq+2pr+2rq\\
+                    P(q,r)   & = & 2(1-q-r)q+2(1-q-r)r+2rq\\
+                             & = & 2q-2q^2-2rq+2r-\cancel{2rq}-2r^2+\cancel{2rq}\\
+                             & = & -2\left(r^2+rq-r-q+q^2\right)
+                \end{eqnarray*}
+                De ésta última ecuación, obtendremos máximos y mínimos. Las primeras derivada
+                parciales son:
+                \begin{eqnarray*}
+                    P_q(q,r)=-2\left(2q+r-1\right) &
+                    P_r(q,r)=-2\left(2r+q-1\right)
+                \end{eqnarray*}
+                Por consiguiente $P_q(q,r)=0$ y $P_r(q,r)=0$ implican que
+                \begin{eqnarray}
+                    2q+r-1 & = & 0\\
+                    2r+q-1 & = & 0
+                \end{eqnarray}
+                De (1) $r=1-2q$, sustituyendo en (2) $2(1-2q)+q-1=0 \Rightarrow 2-4q+q-1=0
+                \Rightarrow q=\frac{1}{3} \therefore r=1-\frac{2}{3}=\frac{1}{3}$. Por lo
+                que se deduce que existe un punto crítico en $(\frac{1}{3},\frac{1}{3})$.
+
+                Para mostrar que dicho punto crítico es un máximo, encontremos sus segundas
+                derivadas parciales:\\$P_{qq}(q,r)=-4;P_{rr}(q,r)=-4;P_{qr}(q,r)=-2$.
+
+                Por la prueba de las segundas derivadas parciales, tenemos
+                $P_{qq}P_{rr}-[P_{qr}]^2=(-4)(-4)-(-2)^2=16-4=12>0$ y puesto que $P_{qq}=-4<0$,
+                entonces el punto $(\frac{1}{3},\frac{1}{3})$ es un máximo relativo. Más aún,
+                como la función $P(q,r)$ representa un paraboloide, el punto $(\frac{1}{3},
+                \frac{1}{3})$ es un {\bf máximo absoluto}.
+
+                El valor máximo que alcanza la función es $P(\frac{1}{3},\frac{1}{3})=
+                -2(\frac{1}{9}+\frac{1}{9}-\frac{1}{3}-\frac{1}{3}+\frac{1}{9})=
+                -2(\cancel{\frac{3}{9}}-\cancel{\frac{1}{3}}-\frac{1}{3})=
+                -2(-\frac{1}{3})=\frac{2}{3}$
+
+                Por lo tanto el valor de la función $P$ es a lo más $\frac{2}{3}$
             }
             % Ejercicio 7
             \item {
